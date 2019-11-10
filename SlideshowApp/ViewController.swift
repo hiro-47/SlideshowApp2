@@ -42,6 +42,15 @@ class ViewController: UIViewController {
         let resultViewController:ResultViewController = segue.destination as! ResultViewController
         
         resultViewController.image = imageView.image
+        if self.timer != nil {
+            self.timer.invalidate()
+            self.timer = nil
+        }
+        
+        
+        
+        
+        
     }
     
     

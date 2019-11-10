@@ -15,9 +15,9 @@ class ResultViewController: UIViewController {
     
     var image :UIImage!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         imageView.image = image
+        
     }
 }
