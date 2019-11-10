@@ -88,24 +88,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rq2-qg-M0l">
-                                <rect key="frame" x="201" y="518" width="31" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="srE-kb-w7y">
+                                <rect key="frame" x="0.0" y="20" width="375" height="333.5"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rq2-qg-M0l">
+                                <rect key="frame" x="100" y="424" width="175" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <state key="normal" title="戻る"/>
                                 <connections>
                                     <segue destination="N6T-Zw-XlX" kind="unwind" unwindAction="unwind:" id="t8H-K3-dpJ"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="srE-kb-w7y">
-                                <rect key="frame" x="0.0" y="20" width="375" height="333.5"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="rq2-qg-M0l" firstAttribute="top" secondItem="srE-kb-w7y" secondAttribute="bottom" constant="70.5" id="ETy-jO-gkX"/>
+                            <constraint firstItem="dgR-TY-Fga" firstAttribute="trailing" secondItem="rq2-qg-M0l" secondAttribute="trailing" constant="100" id="Jv2-sC-J92"/>
                             <constraint firstItem="srE-kb-w7y" firstAttribute="height" secondItem="c0g-Ds-3Hj" secondAttribute="height" multiplier="0.5" id="POm-Xr-J6g"/>
                             <constraint firstItem="srE-kb-w7y" firstAttribute="trailing" secondItem="dgR-TY-Fga" secondAttribute="trailing" id="ZRu-Bb-OJW"/>
                             <constraint firstItem="srE-kb-w7y" firstAttribute="top" secondItem="dgR-TY-Fga" secondAttribute="top" id="hRL-dJ-pKU"/>
                             <constraint firstItem="srE-kb-w7y" firstAttribute="leading" secondItem="dgR-TY-Fga" secondAttribute="leading" id="qqe-VR-3Il"/>
+                            <constraint firstItem="rq2-qg-M0l" firstAttribute="leading" secondItem="dgR-TY-Fga" secondAttribute="leading" constant="100" id="zpp-u0-xB4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dgR-TY-Fga"/>
                     </view>
@@ -116,7 +119,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AQi-JY-Sgv" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="N6T-Zw-XlX" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="613.04347826086962" y="212.94642857142856"/>
+            <point key="canvasLocation" x="612" y="212.74362818590706"/>
         </scene>
     </scenes>
     <resources>
