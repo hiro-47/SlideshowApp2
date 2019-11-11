@@ -28,6 +28,14 @@ class ViewController: UIViewController {
     
     var aaaa = 1
     
+    var kkkk = true
+    
+    
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -45,11 +53,9 @@ class ViewController: UIViewController {
         if self.timer != nil {
             self.timer.invalidate()
             self.timer = nil
+            nextButton.isEnabled = true
+            backButton.isEnabled = true
         }
-        
-        
-        
-        
         
     }
     
